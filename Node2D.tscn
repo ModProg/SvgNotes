@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TextureRect.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0, 0.0743802, 0.289256, 0.553719, 0.859504 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0, 0, 1, 0.0743802, 0.0743802, 0.0743802, 1, 0.289256, 0.289256, 0.289256, 1, 0.553719, 0.553719, 0.553719, 1, 0.801653, 0.801653, 0.801653, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+width = 300
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1404.0
+margin_bottom = 818.0
+texture = SubResource( 2 )
+stretch_mode = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureRect"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Debug
+"
